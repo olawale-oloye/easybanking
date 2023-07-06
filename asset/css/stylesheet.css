@@ -88,6 +88,19 @@ main img {
   padding: 2rem 0;
 }
 
+.main_txt h1 {
+  margin-bottom: 15px;
+  font-weight: 300;
+  font-size: 53px;
+}
+
+.main_txt h4 {
+  margin-bottom: 18px;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 1.4;
+}
+
 /* About Session */
 
 #about {
