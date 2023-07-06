@@ -1,3 +1,5 @@
+AOS.init();
+
 const arrow = document.querySelector(".ri-arrow-up-s-line");
 
 window.addEventListener("scroll", function () {
@@ -15,5 +17,3 @@ arrow.addEventListener("click", function () {
   document.documentElement.scrollTop = 0;
   document.body.scrollTop = 0;
 });
-
-AOS.init();
