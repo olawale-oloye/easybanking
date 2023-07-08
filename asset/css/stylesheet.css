@@ -37,7 +37,7 @@ nav {
   padding: 0.8rem 3rem;
 }
 
-nav i {
+.toggler {
   display: none;
 }
 
@@ -113,6 +113,7 @@ main img {
 #about {
   background-color: #2d314d;
   padding: 5rem 3rem;
+  color: #ffffff;
 }
 
 .section_txt h1 {
@@ -359,7 +360,8 @@ main img {
     width: 85%;
   }
 
-  .easyBank {
+  .easyBank,
+  #article_input {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
@@ -368,11 +370,7 @@ main img {
     width: 23%;
     padding-top: 2rem;
   }
-  #article_input {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 2rem;
-  }
+
   .article:first-child img {
     height: 55%;
   }
@@ -392,11 +390,16 @@ main img {
 @media screen and (max-width: 576px) {
   nav {
     position: relative;
+    padding: 0.8rem 2rem;
   }
 
-  nav i {
+  .toggler {
     display: block;
     font-size: 24px;
+  }
+
+  .toggler i:nth-child(2) {
+    display: none;
   }
 
   nav ul {

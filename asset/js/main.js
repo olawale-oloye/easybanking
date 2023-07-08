@@ -19,25 +19,27 @@ arrow.addEventListener("click", function () {
 });
 
 const openNav = document.querySelector(".ri-menu-2-fill");
-const closeNav = document.querySelector(".ri-close-circle-line");
+const closeNav = document.querySelector(".toggler i:nth-child(2)");
 const navList = document.querySelector("nav ul");
 
 openNav.addEventListener("click", function () {
-  navList.style.top = "30%";
+  navList.style.top = "15%";
   openNav.style.display = "none";
-  closeNav.style.style.display = "block";
+  closeNav.style.display = "block";
 });
 
-closeNav.addEventListener("click", function () {
+function closeNavToggler() {
   navList.style.top = "-50%";
   openNav.style.display = "block";
   closeNav.style.display = "none";
+}
+
+closeNav.addEventListener("click", function () {
+  closeNavToggler();
 });
 
 document.querySelectorAll("nav ul a").forEach((navLink) => {
   navLink.addEventListener("click", function () {
-    navList.style.top = "-50%";
-    openNav.style.display = "block";
-    closeNav.style.display = "none";
+    closeNavToggler();
   });
 });
